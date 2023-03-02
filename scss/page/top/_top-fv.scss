@@ -1,0 +1,30 @@
+@use '../../bases/variables' as vb;
+@use '../../modules/index' as md;
+
+.top-main {
+    width: 100%;
+    padding: 2% 2%;
+
+    .top-title {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .nav-ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 1rem;
+        margin-left: 3rem;
+
+        .name {
+            font-size: 1.5rem;
+            list-style: initial;
+        }
+    }
+}
+
+a:hover {
+    opacity: 0.7;
+}
+

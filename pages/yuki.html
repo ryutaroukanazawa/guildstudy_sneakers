@@ -1,17 +1,198 @@
 <!DOCTYPE html>
-
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yuki</title>
-    <link rel="stylesheet" href="/css/yuki.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/scss/page/yuki/yuki.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.js"></script>
   </head>
 
   <body>
-    <main>
-      Yuki
-    </main>
+    <header>
+      <div class="flex-header">
+        <h1>Sneakers</h1>
+        <div class="openbtn1"><span></span><span></span><span></span></div>
+      </div>
+    </header>
+
+    <section class="fp">
+      <video
+        id="bg-video"
+        src="/img/sn-video/sn-video.mp4"
+        loop=""
+        autoplay=""
+        muted=""
+        playsinline=""
+      ></video>
+    </section>
+    <section class="swiper-pg">
+      <h2>PICK UP</h2>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/img/sn-swiper/1.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/sn-swiper/2.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/sn-swiper/3.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/sn-swiper/4.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/sn-swiper/5.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/sn-swiper/6.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/sn-swiper/7.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/sn-swiper/8.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/sn-swiper/9.png" alt="" />
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section class="feature">
+      <h2>FEATURE</h2>
+      <div class="content">
+        <div class="item">
+          <img src="/img/sn-content/1.png" alt="" />
+          <div class="sub-title">category</div>
+          <div class="text">
+            テキストテキストテキストテキストテキストテキストテキストテキスト
+          </div>
+          <div class="info">XXXX.XX.XX</div>
+        </div>
+        <div class="item">
+          <img src="/img/sn-content/2.png" alt="" />
+          <div class="sub-title">category</div>
+          <div class="text">
+            テキストテキストテキストテキストテキストテキストテキストテキスト
+          </div>
+          <div class="info">XXXX.XX.XX</div>
+        </div>
+        <div class="item">
+          <img src="/img/sn-content/3.png" alt="" />
+          <div class="sub-title">category</div>
+          <div class="text">
+            テキストテキストテキストテキストテキストテキストテキストテキスト
+          </div>
+          <div class="info">XXXX.XX.XX</div>
+        </div>
+        <div class="item">
+          <img src="/img/sn-content/4.png" alt="" />
+          <div class="sub-title">category</div>
+          <div class="text">
+            テキストテキストテキストテキストテキストテキストテキストテキスト
+          </div>
+          <div class="info">XXXX.XX.XX</div>
+        </div>
+        <div class="item">
+          <img src="/img/sn-content/5.png" alt="" />
+          <div class="sub-title">category</div>
+          <div class="text">
+            テキストテキストテキストテキストテキストテキストテキストテキスト
+          </div>
+          <div class="info">XXXX.XX.XX</div>
+        </div>
+        <div class="item">
+          <img src="/img/sn-content/6.png" alt="" />
+          <div class="sub-title">category</div>
+          <div class="text">
+            テキストテキストテキストテキストテキストテキストテキストテキスト
+          </div>
+          <div class="info">XXXX.XX.XX</div>
+        </div>
+        <div class="item">
+          <img src="/img/sn-content/7.png" alt="" />
+          <div class="sub-title">category</div>
+          <div class="text">
+            テキストテキストテキストテキストテキストテキストテキストテキスト
+          </div>
+          <div class="info">XXXX.XX.XX</div>
+        </div>
+        <div class="item">
+          <img src="/img/sn-content/8.png" alt="" />
+          <div class="sub-title">category</div>
+          <div class="text">
+            テキストテキストテキストテキストテキストテキストテキストテキスト
+          </div>
+          <div class="info">XXXX.XX.XX</div>
+        </div>
+        <div class="item">
+          <img src="/img/sn-content/9.png" alt="" />
+          <div class="sub-title">category</div>
+          <div class="text">
+            テキストテキストテキストテキストテキストテキストテキストテキスト
+          </div>
+          <div class="info">XXXX.XX.XX</div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/main.js" defer></script>
   </body>
+
+  <footer>
+    <div class="container">
+      <h2>contact</h2>
+      <div class="flex-box">
+        <div class="left">
+          <p class="text-one">次回のアベ会の日程日程</p>
+          <p class="text-two">3/3（Fri）22:00 ~</p>
+          <p class="text-three">
+            contactformの送信、確認、完了ページやります!
+            当日参加できない人は後日時間を取って教えます。もしくは参加したひとから教わってください！できれば後者がよきです。
+          </p>
+        </div>
+        <div class="right">
+          <div class="item">
+            <p class="subtitle">Name :</p>
+            <div class="answer"></div>
+          </div>
+
+          <div class="item">
+            <p class="subtitle">Mail :</p>
+            <div class="answer"></div>
+          </div>
+
+          <div class="item">
+            <p class="subtitle">Message :</p>
+            <div class="answer"></div>
+          </div>
+
+          <div class="send">
+            <p>SEND</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="copy">© Sneakers</p>
+    </div>
+  </footer>
 </html>

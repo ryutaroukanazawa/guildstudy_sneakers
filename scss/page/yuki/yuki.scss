@@ -1,0 +1,437 @@
+@charset "UTF-8";
+
+// base set
+@use "../../bases/reset";
+@use "../../bases/base";
+
+// layout set
+@use "../ryutaro/index";
+
+header {
+  & .flex-header {
+    display: flex;
+    justify-content: space-between;
+
+    & h1 {
+      font-size: 3vw;
+      line-height: 2em;
+      padding-left: 2%;
+    }
+
+    & .openbtn1 {
+      position: relative; /*ボタン内側の基点となるためrelativeを指定*/
+      cursor: pointer;
+      width: 50px;
+      height: 40px;
+      border-radius: 5px;
+
+      /*ボタン内側*/
+      & span {
+        display: inline-block;
+        transition: all 0.4s; /*アニメーションの設定*/
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        border-radius: 2px;
+        background: #333;
+        width: 45%;
+
+        &:nth-of-type(1) {
+          top: 15px;
+        }
+
+        &:nth-of-type(2) {
+          top: 23px;
+        }
+
+        &:nth-of-type(3) {
+          top: 31px;
+        }
+      }
+
+      /*activeクラスが付与されると線が回転して×に*/
+
+      &.active {
+        & span:nth-of-type(1) {
+          top: 18px;
+          left: 18px;
+          transform: translateY(6px) rotate(-45deg);
+          width: 30%;
+        }
+
+        & span:nth-of-type(2) {
+          opacity: 0; /*真ん中の線は透過*/
+        }
+
+        & span:nth-of-type(3) {
+          top: 30px;
+          left: 18px;
+          transform: translateY(-6px) rotate(45deg);
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #bg-video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  #bg-video {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-pg {
+    width: 100%;
+    padding: 100px 0 0 0;
+
+    & h2 {
+      text-align: center;
+      font-size: 3vw;
+      line-height: 1.5em;
+      margin-bottom: 30px;
+    }
+
+    & .swiper {
+      width: 100%;
+      height: 100%;
+
+      & .swiper-wrapper {
+        & .swiper-slide {
+          margin: 0 auto;
+        }
+
+        & .swiper-slide img {
+          width: 100%;
+          height: 100%;
+          // object-fit: cover;
+          display: block;
+          margin: 0 auto;
+          background-color: black;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .swiper-pg {
+    padding: 100px 0 0 0;
+
+    & h2 {
+      text-align: center;
+      font-size: 3vw;
+      line-height: 1.5em;
+      margin-bottom: 30px;
+    }
+
+    & .swiper {
+      width: 100%;
+      height: 100%;
+
+      & .swiper-wrapper {
+        & .swiper-slide {
+          margin: 0 auto;
+
+          & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            background-color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 657px) {
+  .feature {
+    margin: 50px auto 10px auto;
+    max-width: 1240px;
+    padding: 100px 16px 50px 16px;
+    & h2 {
+      font-size: 3vw;
+      text-align: center;
+      margin: 30px;
+    }
+    & .content {
+      max-width: 1240px;
+      margin: 0 auto;
+      gap: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & .item {
+        box-shadow: 0 0 8px 4px #ccc;
+
+        & .sub-title {
+          margin: 36px 0 0 30px;
+        }
+
+        & .text {
+          margin: 23px 30px;
+        }
+
+        & .info {
+          text-align: right;
+          margin: 16px 30px 35px 0;
+        }
+
+        & img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 658px) {
+  .feature {
+    margin: 50px auto 10px auto;
+    max-width: 1240px;
+    padding: 100px 16px 50px 16px;
+    & h2 {
+      font-size: 3vw;
+      text-align: center;
+      margin: 30px;
+    }
+    & .content {
+      max-width: 1240px;
+      margin: 0 auto;
+      gap: 26px;
+      display: grid;
+      grid-template:
+        "header header "
+        "left   center "
+        "footer footer ";
+
+      & .item {
+        box-shadow: 0 0 8px 4px #ccc;
+
+        & .sub-title {
+          margin: 36px 0 0 30px;
+        }
+
+        & .text {
+          margin: 23px 30px;
+        }
+
+        & .info {
+          text-align: right;
+          margin: 16px 30px 35px 0;
+        }
+
+        & img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 984px) {
+  .feature {
+    margin: 50px auto 10px auto;
+    max-width: 1240px;
+    padding: 100px 16px 50px 16px;
+    & h2 {
+      font-size: 3vw;
+      text-align: center;
+      margin: 30px;
+    }
+    & .content {
+      max-width: 1240px;
+      margin: 0 auto;
+      gap: 26px;
+      display: grid;
+      grid-template:
+        "header header header"
+        "left   center right   "
+        "footer footer footer";
+
+      & .item {
+        box-shadow: 0 0 8px 4px #ccc;
+
+        & .sub-title {
+          margin: 36px 0 0 30px;
+        }
+
+        & .text {
+          margin: 23px 30px;
+        }
+
+        & .info {
+          text-align: right;
+          margin: 16px 30px 35px 0;
+        }
+
+        & img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    background-color: black;
+    color: white;
+    padding: 80px 4.5% 10px 4.5%;
+
+    & .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & h2 {
+        font-size: clamp(1px, 6.5vw, 24px);
+      }
+
+      & .flex-box {
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+        // align-items: center;
+
+        & .left {
+          font-size: clamp(1px, 3.8vw, 15px);
+          line-height: 1.7em;
+
+          & .text-one {
+            margin-top: 20px;
+          }
+
+          & .text-two {
+            margin-top: 30px;
+          }
+          & .text-three {
+            margin-top: 30px;
+          }
+        }
+
+        & .right {
+          & .item {
+            width: 100%;
+            font-size: clamp(1px, 3.8vw, 15px);
+            line-height: 1.7em;
+            margin-top: 20px;
+
+            & .subtitle {
+            }
+
+            & .answer {
+              min-height: 50px;
+              background-color: white;
+            }
+          }
+
+          & .send {
+            text-align: center;
+            width: 30%;
+            margin: 27px auto 0 auto;
+
+            & p {
+              border: white solid 1px;
+              padding: 10px;
+            }
+          }
+        }
+      }
+
+      & .copy {
+        margin-top: 90px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 601px) {
+  footer {
+    background-color: black;
+    color: white;
+    padding: 80px 4.5% 10px 4.5%;
+
+    & .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & h2 {
+        font-size: clamp(1px, 4vw, 36px);
+        margin-bottom: 30px;
+      }
+
+      & .flex-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8%;
+
+        & .left {
+          font-size: clamp(1px, 3.8vw, 15px);
+          line-height: 1.7em;
+          width: 100%;
+
+          & .text-one {
+          }
+
+          & .text-two {
+            margin-top: 30px;
+          }
+          & .text-three {
+            margin-top: 30px;
+          }
+        }
+
+        & .right {
+          width: 100%;
+          & .item {
+            width: 100%;
+            font-size: clamp(1px, 3.8vw, 15px);
+            line-height: 1.7em;
+            margin-top: 20px;
+
+            & .subtitle {
+            }
+
+            & .answer {
+              min-height: 50px;
+              background-color: white;
+            }
+          }
+
+          & .send {
+            text-align: center;
+            width: 30%;
+            margin: 27px auto 0 auto;
+
+            & p {
+              border: white solid 1px;
+              padding: 10px;
+            }
+          }
+        }
+      }
+
+      & .copy {
+        margin-top: 90px;
+      }
+    }
+  }
+}

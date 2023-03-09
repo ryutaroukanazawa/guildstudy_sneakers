@@ -445,4 +445,26 @@ Opening-Animation
 Font-Set
 ===============
 */
-/*# sourceMappingURL=top.css.map */
+.top-main {
+  width: 100%;
+  padding: 2% 2%;
+}
+.top-main .top-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.top-main .nav-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+.top-main .nav-ul .name {
+  font-size: 1.5rem;
+  list-style: initial;
+}
+
+a:hover {
+  opacity: 0.7;
+}/*# sourceMappingURL=top.css.map */

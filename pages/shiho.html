@@ -1,17 +1,205 @@
 <!DOCTYPE html>
 
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shiho</title>
-    <link rel="stylesheet" href="/css/shiho.css" />
-  </head>
 
-  <body>
-    <main>
-      Shiho
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shiho</title>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../css/shiho.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+  <header class="container">
+    <img src="https://code-step.com/demo/html/media/img/logo.svg" alt="">
+    <nav id="gNav">
+      <ul class="gNav-menu">
+        <li><a href="#pickup">Pick Up</a></li>
+        <li><a href="#feature">Feature</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    </div>
+    <!-- ハンバーガーボタン -->
+    <div id="hamburger">
+      <p class="btn-gNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </p>
+    </div>
+  </header>
+  <main>
+    <!-- top -->
+    <section id="top" class="container">
+      <video src="https://code-step.com/demo/html/media/video/video.mp4" autoplay muted loop></video>
+    </section>
+    <!-- // top -->
+    <!-- pick up -->
+    <section id="pickup">
+      <h2>PICK UP</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../img/IMAGE.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/IMAGE-1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/IMAGE-2.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/IMAGE-3.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/IMAGE-4.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/IMAGE-5.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/IMAGE-8.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/IMAGE-7.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/IMAGE-6.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // pick up -->
+
+    <!-- feature -->
+    <section id="feature">
+      <h2>FEATURE</h2>
+      <div class="container text-center">
+        <div class="row row-cols-1 row-cols-sm-3">
+          <div class="col">
+            <img src="../img/IMAGE-9.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">category</h5>
+              <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p class="date">XXXX.XX.XX</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="../img/IMAGE-10.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">category</h5>
+              <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p class="date">XXXX.XX.XX</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="../img/IMAGE-11.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">category</h5>
+              <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p class="date">XXXX.XX.XX</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="../img/IMAGE-12.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">category</h5>
+              <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p class="date">XXXX.XX.XX</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="../img/IMAGE-13.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">category</h5>
+              <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p class="date">XXXX.XX.XX</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="../img/IMAGE-14.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">category</h5>
+              <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p class="date">XXXX.XX.XX</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="../img/IMAGE-15.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">category</h5>
+              <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p class="date">XXXX.XX.XX</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="../img/IMAGE-16.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">category</h5>
+              <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p class="date">XXXX.XX.XX</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="../img/IMAGE-17.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">category</h5>
+              <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p class="date">XXXX.XX.XX</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // feature -->
+
+    <!-- contact -->
+    <section id="contact">
+      <h2>CONTACT</h2>
+      <div class="contact-dtl container">
+        <div class="txt">
+          <p>次回のアベ会の日程日程</p>
+          <p>3/3（Fri）22:00 　~ 　</p>
+          <p>contactformの送信、確認、完了ページやります！<br>
+            当日参加できない人は後日時間を取って教えます。<br>
+            もしくは参加したひとから教わってください！できれば後者がよきです。</p>
+        </div>
+        <div class="contact-form">
+          <form action="post">
+            <p>Name:</p>
+            <input type="text" name="name" id="name">
+            <p>Mail:</p>
+            <input type="text" name="email" id="email">
+            <p>Message:</p>
+            <textarea name="message" id="message"></textarea>
+            <br><a href="">Send</a>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- // contact -->
+  </main>
+  <footer>
+    © Sneakers
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="../js/shiho.js"></script>
+</body>
+
 </html>
